@@ -17,7 +17,7 @@ for i in n2:
 finalcount = count1 + count2
 
 def checkflmes(int):
-    res = ["FRIENDS", "LOVE", "AFFECTION", "MARRIAGE", "ENEMY", "SIBLINGS"]
+    res = ["FRIENDS", "LOVE", "ACQUAINTANCES", "MARRIAGE", "ENEMY", "SIBLINGS"]
     check = int % 6 - 1
     length = len(res)
     for i in range(length):
