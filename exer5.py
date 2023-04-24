@@ -11,10 +11,6 @@ with open("exer5.txt", "r") as f:
     lines = [line.strip() for line in f.readlines()]
     
 lines.sort()
-
-with open("exer5.txt","w") as f:
-    for word in lines:
-        f.write(word + "\n")
     
 for word in lines:
     print(word)
