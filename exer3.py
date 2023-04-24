@@ -19,9 +19,7 @@ finalcount = count1 + count2
 def checkflmes(int):
     res = ["FRIENDS", "LOVE", "ACQUAINTANCES", "MARRIAGE", "ENEMY", "SIBLINGS"]
     check = int % 6 - 1
-    length = len(res)
-    for i in range(length):
-        return res[check]
+    return res[check]
         
 
 print("Result for "+ name1 +" ==> " +str(checkflmes(count1)))
