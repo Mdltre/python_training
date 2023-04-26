@@ -35,14 +35,14 @@ class StudentAccount(BankAccount):
         else:
             print("Not enough balance!")
             
-bank = BankAccount("Test", 90000, 300)
+# bank = BankAccount("Test", 90000, 300)
 
-bank.deposit(100)
-bank.withdraw(200)
-bank.add_interest()
+# bank.deposit(100)
+# bank.withdraw(200)
+# bank.add_interest()
 
-student = StudentAccount("Stud", 10000,500)
+# student = StudentAccount("Stud", 10000,500)
 
-student.deposit(100)
-student.withdraw(300)
-student.add_interest()
+# student.deposit(100)
+# student.withdraw(300)
+# student.add_interest()
