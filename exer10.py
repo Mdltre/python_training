@@ -12,6 +12,9 @@ class TestBankAccount(unittest.TestCase):
     def test_withdraw(self):
         self.account.withdraw(500)
         self.assertEqual(self.account.balance, 500)
+        self.account.withdraw(1000)            # check overdraft limit
+        self.assertEqual(self.account.balance, 500)
+        
     
 class TestStudentAccount(unittest.TestCase):
     
@@ -24,6 +27,8 @@ class TestStudentAccount(unittest.TestCase):
         
     def test_withdraw(self):
         self.account.withdraw(500)
+        self.assertEqual(self.account.balance, 500)
+        self.account.withdraw(1000)             # check overdraft limit
         self.assertEqual(self.account.balance, 500)
         
 if __name__ == '__main__':
