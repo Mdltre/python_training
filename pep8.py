@@ -1,10 +1,12 @@
 import math
 import datetime
+from math import sqrt
+from os import *
 
 
 def take_all_list(arg1, arg2, arg3=0, *args, **kwargs):
-    """
-    Docstring for take_all_list. Basically, this is a useless function, but would test how well you know about PEP-8.
+    """Docstring for take_all_list. 
+    Basically, this is a useless function, but would test how well you know about PEP-8.
     """
     list_a = [1, 2, 3, 4, 5]
     var_b = list_a[0] * list_a[1] + list_a[2] - (3 + list_a[3])
@@ -29,19 +31,14 @@ def print_all_number(n):
     fourth = n + 3
     print(first, second, third, fourth)
     for n in range(n):
-        print(n)  # This will print n
-        m += n  # This will increment m with n
-        print(m)  # This will print m
+        print(n) 
+        m += n 
+        print(m)  
     checker = m > sum(range(n))
     if checker:
         print("TAMA!")
     else:
         print("MALI!")
-
-
-from math import sqrt
-from os import *
-
 
 class ThisIsStudentClass:
     FIRSTNAME = 'A'
@@ -56,7 +53,6 @@ class ThisIsStudentClass:
 
 
 def another_function():
-    # This will do something. I promise.
     print(math.pi)
     sqrt_of_pi = sqrt(math.pi)
     print("It's the square root of pi", sqrt_of_pi)
